@@ -1,0 +1,2 @@
+Profesor nombreUsuario=CarlaRoldan90, contrasena=Panda75, nombre=Carla, apellido=Roldan, cuil=20324819850, telefono=2235836713, email=carlaroldan90@gmail.com, plantaSuplente=true, materias=Matematicas, curso=4° año
+Profesor nombreUsuario=DanielaLazarte71, contrasena=Panda76, nombre=Daniela, apellido=Lazarte, cuil=33418911479, telefono=2235441517, email=danielalazarte@gmail.com, plantaSuplente=true, materias=Literatura, curso=6° año
