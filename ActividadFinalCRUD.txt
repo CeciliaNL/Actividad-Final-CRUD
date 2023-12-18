@@ -1,0 +1,21 @@
+TRABAJO INTEGRADOR FINAL 
+
+2. En mi proyecto hice una aplicación de una institución escolar (IDRA) en donde se puedan registrar tanto alumnos como profesores, implementando una interfaz gráfica con Java Swing utilizando íconos, Jlabel, Textfield y botones para que el usuario tenga una visual atractiva, amigable e intuitiva.
+Al accionar el botón de ingresar se conecta a la base de datos, la lógica utilizada son las variables que toman de los TextField. Mediante un condicional la capa dao compara y verifica si el usuario existe. En caso de que se valide que coincidan el usuario y contraseña devuelve un boolean y si es verdadero ingresa al sistema. Utiliza un set para enviar el objeto de la entidad encontrada y asi manejar los datos de la misma en el menú. En caso de ser falso, le arroja un mensaje a traves de un PopUp "Usuario inexistente".
+Al accionar el botón registrarse se presenta un formulario donde se solicitan al usuario sus datos personales, un id y contraseña. Se verifica que los campos no esten vacios y cumplan con los requisitos del formulario, aplicando condicionales if y el metodo contains.
+Una vez registrados o si ya eran usuarios existentes, pueden ingresar al sistema. 
+Carga un menú estudiante con los botones: -Datos personales: Donde el usuario puede visualizas sus datos. Llama al objeto y llena el formulario.
+                                          -Mis consultas: Donde el usuario puede consultar la lista de materias, compañeros y profesores acorde al curso. Llama a la capa servicio la cual se comunica con dao, llama a una lista de objetos y se muestran por pantalla.
+                                          -Editar mis datos: Donde el usuario puede modificar mail y/o telefono. Tambien incluye un botón para eliminar el usuario. Las variables son enviadas a dao, que mediante una query realiza el update.
+                                          -Institución: Donde se ve un breve resumen de la historia de la institución. Utilice un Label, al cual le asigne un fondo con una imagen pre diseñada.
+                                          -Contacto: Donde se puede obtener la dirección, teledono y mail de la institución. Tambien inclui como icono un mapa de la ubicación de la misma. Utilice un Label, al cual le asigne un fondo con una imagen pre diseñada.
+
+Carga un menú profesor con los botones: -Datos personales: Donde el usuario puede visualizas sus datos. Llama al objeto y llena el formulario.
+                                        -Mis cursos/materias: En donde el usuario puede seleccionar mediante un combo box los cursos existentes y las materias que le corresponden a cada profesor. Inclusive las del usuario.
+                                        -Estudiantes: En donde el usuario puede ver la lista de estudiantes a los que da clases segun el curso seleccionado en el combo box.
+                                        -Editar mis datos: Donde el usuario puede modificar mail y/o telefono. Tambien incluye un botón para eliminar el usuario. Las variables son enviadas a dao, que mediante una query realiza el update.
+
+Tanto en el menu usuario profesor, como el de usuario estudiante hay un botón que permite cerrar sesión.
+La aplicación responde completamente al CRUD solicitado. Crea usuarios nuevos, lee y lista usuarios, modifica usuarios y permite eliminar usuarios.
+
+3.Entre las dificultades que me encontre esta la de como listar usuarios utilizando un combo box, lo resolvi utilizando un JTable y JScrollPane.
